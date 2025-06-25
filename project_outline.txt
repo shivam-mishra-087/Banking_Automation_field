@@ -1,0 +1,79 @@
+Project category
+	Desktop project
+
+Project Title
+	Banking Automation
+
+User Types
+	User
+	Admin
+
+Roles of Admin:
+---------------
+	1.Opening user account
+	2.Closing user account
+	3.View user accounts
+
+Roles of Users:
+---------------
+	1.Login(authentication)
+	2.Recover password
+	3.Updating profile picture
+	4.Updating account details(password,mobile,email)
+	5.Deposit
+	6.Withdraw
+	7.Transfer
+	8.History
+	9.Balance check
+
+Front End Libraries
+	tkinter (Standard library)
+	pillow (3rd party library)
+	tktable (3rd party library)
+	gmail (3rd party library)
+	bytesIO (3rd party library)
+	
+BackEnd(database)
+	sqlite
+
+Tables:
+-------
+	1. accounts
+		accounts_acno		integer primarykey autoincrement
+		accounts_name		text
+		accounts_pass		text
+		accounts_email		text
+		accounts_mob		text
+		accounts_dob		date
+		accounts_address	text
+		accounts_adhar		Big integer primarykey
+		accounts_ifsc		text
+		accounts_gender		text
+		accounts_opendate	text
+		accounts_bal		float
+
+	2.statements		
+		stmts_acn		integer
+		stmts_amt		float
+		stmts_type		text
+		stmts_date		text
+		stmts_update_bal	float
+		stmts_txnid		text	primary key
+
+
+Workflow:
+---------
+	> first admin need to login using ACN=0 and pass=admin
+	> then admin opens accounts for customers
+	> acn,initial pass sent to customer email
+
+	>user(customer) can login using provides ACN & Pass in Email
+	>user can changes pass & perform various activities
+
+
+
+	
+
+
+
+
